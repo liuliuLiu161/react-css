@@ -1,0 +1,56 @@
+/**
+ *  Define scss variables here.
+ *
+ *  Available options for Bootstrap:
+ *  http://getbootstrap.com/customize/
+ *
+ */
+
+//Colors
+$main-color: #3CA0FF;
+
+//font
+$tfont-size: .18rem; // 大标题
+$bfont-size: .16rem; // 常用标题
+$font-size: .15rem; // 正常字体
+$zfont-size: .14rem;
+$nfont-size: .13rem; // 修饰字体标题
+$mfont-size: .12rem; // 时间字体
+
+$bfont-color: #505050; // 常用字体深色
+$font-color: #797979; // 正常字体颜色
+$nfont-color: #b4b4b4; // 修饰字体颜色 浅色
+$zfont-color: #3CA0FF; //主题色
+$border-color: #d8d8d8;
+
+// margin
+$lrmargin: .15rem; // 左右间距
+$tbmargin: .1rem; // 块与块之间的上下间距
+$inmargin: .06rem; // 块内之间小间距
+
+// 以背景图片，引入图片精灵 background: $backurl-icon
+$backurl-icon: url(../../images/icon.png);
+$add-icon: url(../../../images/icon.png);
+
+
+@mixin list2($direc1: bottom, $value: .01rem) {
+  border-#{$direc1}: $value solid $border-color;
+  background: #fff;
+}
+
+@mixin sanjiao($direc1, $direc2, $direc3, $color: $main-color, $value:.08rem) {
+  width: 0;
+  height: 0;
+  border-#{$direc1}: $value solid transparent;
+  border-#{$direc2}: $value solid $color;
+  border-#{$direc3}: $value solid transparent;
+}
+
+@mixin shade($backgroundColor: rgba(0,0,0,.5), $top: 0) {
+  position: fixed;
+  top: $top;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: backgroundColor;
+}

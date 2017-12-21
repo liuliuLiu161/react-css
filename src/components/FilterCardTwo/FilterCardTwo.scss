@@ -1,0 +1,41 @@
+@import '../../theme/variables.scss';
+
+.filterCardTwo{
+  .selectFree{
+    font-size: 0.16rem;
+    height: 0.4rem;
+    margin-top: 0.2rem;
+    .leftbuttonbule{
+      float: left;
+      background: $main-color;
+      width: 1.5rem;
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      color: white;
+    }
+    .leftbuttongray{
+      float: left;
+      background: #F8F8F8;
+      width: 1.5rem;
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      color: #797979;
+    }
+    .rightbuttonbule{
+      float: right;
+      background: $main-color;
+      width: 1.5rem;
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      color: white;
+    }
+    .rightbuttongray{
+      float: right;
+      background: #F8F8F8;
+      width: 1.5rem;
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      color: #797979;
+    }
+  }
+}

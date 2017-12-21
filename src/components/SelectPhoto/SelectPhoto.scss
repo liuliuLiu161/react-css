@@ -1,0 +1,71 @@
+@import '../../theme/variables.scss';
+
+.uploadInformation{
+  .details{
+    padding-bottom: 0.15rem;
+    background: white;
+    margin-top: 0.1rem;
+    p{
+      margin: 0 0.15rem 0 0.15rem;
+      font-size: 0.15rem;
+      color: #797979;
+      border-bottom: 1px solid #ECECEC;
+      height: 0.45rem;
+      line-height: 0.45rem;
+    }
+    textarea{
+      width: 100%;
+      height: 2rem;
+      padding: 0.15rem;
+      color: #B4B4B4;
+    }
+    img{
+      margin-left: 0.15rem;
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+
+  }
+  .photo{
+    background: white;
+    padding: 0.15rem 0.05rem 0.15rem 0.05rem;
+    .photodetail{
+      float: left;
+      margin-top: 0.15rem;
+      margin-left: 0.05rem;
+      .uploadimage{
+        width: 0.7rem;
+        height: 0.7rem;
+      }
+      .shanchuimage{
+        border-radius: 0.2rem;
+        position: relative;
+        left: 0.1rem;
+        top: -0.3rem;
+        width: 0.2rem;
+        height: 0.2rem;
+      }
+    }
+    section{
+      float: left;
+      margin-left: 0.25rem;
+      margin-top: 0.15rem;
+      label{
+        background:url(../../images/tianjiatupian.png);
+        background-size: 0.7rem;
+        width: 0.7rem;
+        height:0.7rem;
+      }
+      input{
+        display: none;
+      }
+    }
+  }
+  footer{
+    padding: $lrmargin*2 $lrmargin;
+    .unableBtn {
+      color: white !important;
+      background: #B4B4B4 !important;
+    }
+  }
+}

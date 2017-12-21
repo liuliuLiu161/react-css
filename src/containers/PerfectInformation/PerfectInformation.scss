@@ -1,0 +1,311 @@
+@import '../../theme/variables.scss';
+/*form no border*/
+.formLayout{
+  position: relative;
+  padding: .03rem .06rem;
+  margin: 0.2rem 0 $lrmargin;
+  label{
+    margin-bottom: 0;
+    height: .3rem;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: .4rem;
+    z-index: -1;
+  }
+  label:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $border-color;
+  }
+  label:after{
+    content: '';
+    width: 0;
+    height: .02rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $main-color;
+    -webkit-transition: width 0.1s;
+    transition: width 0.1s;
+  }
+  i{
+    background: $backurl-icon;
+    background-position: -3.86rem 0;
+    background-size: 2rem;
+    width: .14rem;
+    height: .18rem;
+    margin-right: $lrmargin;
+    margin-left: $inmargin;
+  }
+  input, select {
+    margin-left: .3rem;
+    width: calc(100% - .3rem);
+    height: .3rem;
+    line-height: .3rem;
+    color: $bfont-color;
+  }
+  input:focus + label i{
+    background-position: -3.62rem 0;
+  }
+  input:focus + label:after{
+    width: 100%;
+  }
+}
+.footerArticle{
+  font-size: $bfont-size;
+  color: $main-color;
+  width: 100%;
+  text-align: center;
+  margin: $tbmargin*2 0 $tbmargin;
+}
+.userCard{
+  i{
+    margin-right: $tbmargin;
+    height: .18rem;
+  }
+}
+.passwordCard{
+  i{
+    background-position: -3.86rem -.26rem;
+    margin-right: $tbmargin;
+    height: .2rem;
+  }
+  input:focus + label i{
+    background-position: -3.62rem -.26rem;
+  }
+}
+.forgetPasswordBtn{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: $nfont-size;
+  color: $nfont-color;
+  margin-top: .1rem;
+  z-index: 10;
+  i{
+    background-position: -3.42rem 0;
+    height: .13rem;
+    margin-right: $inmargin;
+  }
+}
+.msgCard{
+  i{
+    background-position: -3.86rem -0.58rem;
+    margin-right: $lrmargin;
+  }
+  .getMsgBtn{
+    position: absolute;
+    width: .6rem;
+    background: #BAC4CE;
+    color: #D1D8E0;
+    line-height: .3rem;
+    text-align: center;
+    border-radius: 1px;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+  .getMsgBtnCur{
+    color: #fff;
+    background: $main-color;
+  }
+  input:focus + label i{
+    background-position: -3.62rem -.58rem;
+    margin-right: $lrmargin - .01rem;
+    width: .15rem;
+  }
+}
+.submitBtn{
+  margin-top: $lrmargin*2;
+  button{
+    color: #fff;
+  }
+  .unableBtn{
+    color: #77BBFF;
+  }
+}
+/*border form*/
+.formLayoutBorder{
+  height: .4rem;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  input, select{
+    height: .34rem;
+    line-height: .34rem;
+  }
+  label{
+    i{
+      margin-left: $tbmargin;
+    }
+  }
+  label:after{
+    height: 0;
+  }
+  label:before{
+    height: .4rem;
+    background: transparent;
+    border: 1px solid $border-color;
+    width: 100%;
+    z-index: -1;
+  }
+  .graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+    transform: scale3d(1, -1, 1);
+    -webkit-transition: stroke-dashoffset 0.6s;
+    transition: stroke-dashoffset 0.6s;
+    pointer-events: none;
+    stroke: $main-color;
+    stroke-width: 6px;
+    stroke-dasharray:1000;
+    stroke-dashoffset: 1000;
+  }
+  input:focus + label .graphic, select:focus + label .graphic{
+    stroke-dashoffset: 0;
+  }
+}
+.formLayoutBorder.msgCard {
+  .getMsgBtn{
+    line-height: .4rem;
+  }
+}
+.unAbleInputCard{
+  background: #f7f7f7;
+  i{
+    background-position: -3.88rem -.86rem;
+    width: .12rem;
+    margin-left: .13rem;
+  }
+  input{
+    background: #f7f7f7;
+  }
+}
+.cardTypeCard, .cardCard{
+  background: #fff;
+  border: 0 solid #fff;
+  border-radius: 0;
+  min-width: 1rem;
+  select{
+    background: #fff;
+  }
+  label i{
+    background-position: -1.82rem -1.14rem;
+    width: .18rem;
+    background-repeat: no-repeat;
+  }
+  p{
+    top: .13rem !important;
+    i{
+      background: transparent;
+      margin-right: 0;
+    }
+  }
+  input:focus + label i{
+    background-position: -1.58rem -1.14rem;
+  }
+}
+.telCard{
+  label{
+    i{
+      background-position: -3.88rem -.86rem;
+      width: .12rem;
+      margin-left: .13rem;
+    }
+  }
+  input:focus + label i{
+    background-position: -3.65rem -.86rem;
+  }
+}
+.sexCard{
+  color: $bfont-color;
+  dl{
+    dd{
+      margin: 0 $tbmargin;
+    }
+  }
+  dl:nth-of-type(1) {
+    padding-left: .14rem;
+    i{
+      background: $backurl-icon;
+      background-position: -3.86rem -1.4rem;
+      background-size: 2rem;
+      width: .14rem;
+      height: .18rem;
+      margin-right: $tbmargin;
+    }
+  }
+  dl:nth-of-type(2) {
+    padding: 0 .14rem;
+  }
+}
+.dateCard{
+  label i{
+    background-position: -1.83rem -1.72rem;
+    width: .18rem;
+    margin-left: .11rem;
+    background-repeat: no-repeat;
+  }
+  .birthdayName{
+    border: 0px solid #fff !important;
+    background: #fff;
+  }
+  input[type=date]{
+    //去除select右边默认的图标
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -ms-appearance:none;
+    width: calc(100% - .3rem);
+    background: #fff !important;
+  }
+  input[type="date"]:before{
+    content: attr(placeholder);
+  }
+  input[disabled] {
+    background: #fff !important;
+  }
+  input:focus + label i{
+    background-position: -1.58rem -1.72rem;
+  }
+}
+.userRelationCard{
+  label i{
+    background-position: -1.82rem -1.99rem;
+    width: .17rem;
+    margin-left: .1rem;
+  }
+  input:focus + label i{
+    background-position: -1.58rem -1.99rem;
+  }
+}
+
+/*login page*/
+.LoginPage{
+  padding: 1.12rem .36rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+/*register page*/
+.RegisterPage{
+  padding: .4rem .36rem 0;
+  position: relative;
+  z-index: 10;
+  footer{
+    color: $border-color;
+    font-size: $nfont-size;
+    margin: $tbmargin*2 0 $tbmargin;
+    width: 100%;
+    text-align: center;
+  }
+}

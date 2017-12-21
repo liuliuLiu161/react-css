@@ -1,0 +1,45 @@
+@import '../../theme/variables.scss';
+
+.filterCard{
+  header{
+    height: .45rem;
+    background: #fff;
+    box-shadow: 0 .001rem .003rem 0 rgba(0,0,0,0.10);
+    color: $bfont-color;
+    font-size: $zfont-size;
+    position: relative;
+    z-index: 20;
+    justify-content: space-around;
+    .filterItemIcon{
+      @include sanjiao(left, top, right, $nfont-color, .06rem);
+      margin-left: $tbmargin;
+    }
+    .filterItemIconCur {
+      @include sanjiao(left, bottom, right, $main-color, .06rem);
+      margin-left: $tbmargin;
+    }
+  }
+  section{
+    position: absolute;
+    width: 100%;
+  }
+  ul{
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    li{
+      padding: $tbmargin $lrmargin;
+      color: $bfont-color;
+    }
+    li:nth-of-type(1) {
+      border-top: .005rem solid $border-color;
+    }
+    li:active{
+      background: #f2f2f2;
+    }
+  }
+  .filterShade{
+    z-index: 10;
+  }
+}
+

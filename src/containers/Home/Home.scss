@@ -1,0 +1,99 @@
+@import '../../theme/variables.scss';
+
+.homePage{
+  .banner{
+    position: relative;
+    img{
+      width: 100%;
+    }
+    .bannerIcon{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      li{
+        width: .1rem;
+        height: .1rem;
+        border-radius: 100%;
+        background: rgba(255,255,255,0.4);
+        margin: .06rem;
+        display: inline-block;
+      }
+      li.bannerIconCur{
+        background: rgba(255,255,255,0.8);
+      }
+    }
+  }
+  nav {
+    border-top: 1px solid #d8d8d8;
+    margin: .1rem 0;
+    background: #fff;
+    section{
+      float: left;
+      width: 33.33%;
+      height: 2.11rem;
+      .yuyueguahao{
+        height: 100%;
+        text-align: center;
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        dd{
+          color: #505050;
+          font-size: 0.16rem;
+          padding-top: 0.44rem;
+        }
+        dt{
+          color: #B4B4B4;
+          font-size: 0.12rem;
+          margin-top: 0.06rem;
+        }
+        img{
+          width: 0.73rem;
+          height: 0.65rem;
+          margin-top: 0.18rem;
+        }
+      }
+      .menzhenjiaofei{
+        text-align: center;
+        border-right: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        height: 50%;
+        dd{
+          color: #505050;
+          font-size: 0.16rem;
+          margin-top: 0.12rem;
+        }
+        dt{
+          color: #B4B4B4;
+          font-size: 0.12rem;
+          margin-top: 0.06rem;
+        }
+        img{
+          width: 0.38rem;
+          height: 0.29rem;
+          margin-top: 0.15rem;
+        }
+      }
+      .zhuyuanfuwu{
+        text-align: center;
+        border-bottom: 1px solid #d8d8d8;
+        height: 50%;
+        dd{
+          color: #505050;
+          font-size: 0.16rem;
+          margin-top: 0.12rem;
+        }
+        dt{
+          color: #B4B4B4;
+          font-size: 0.12rem;
+          margin-top: 0.06rem;
+        }
+        img{
+          width: 0.38rem;
+          height: 0.29rem;
+          margin-top: 0.15rem;
+        }
+      }
+    }
+  }
+}

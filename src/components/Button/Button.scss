@@ -1,0 +1,36 @@
+@import '../../theme/variables.scss';
+
+
+.notClick {
+  color: white;
+  footer{
+    padding: 0 0.15rem 0 0.15rem;
+    .unableBtn{
+      color: #77BBFF;
+    }
+  }
+}
+
+.canClickBtn{
+  color: white;
+  footer{
+    padding: 0 0.15rem 0 0.15rem;
+  }
+}
+
+.positionBtn{
+
+}
+
+.allSelectBtn{
+  display: flex;
+  footer{
+    input{
+      width: 0.2rem;
+      height: 0.2em;
+    }
+    button{
+      margin-left: 0.1rem;
+    }
+  }
+}
