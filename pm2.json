@@ -1,6 +1,6 @@
 {
   "apps" : [{
-    "name"        : "changchunWechat",
+    "name"        : "react-css",
     "script"      : "bin/server.js",
     "watch"       : false,
     "env": {
